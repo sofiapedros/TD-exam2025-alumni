@@ -1,3 +1,9 @@
+# Consideraciones del examen
+
+- 0.2 puntos cada pregunta correcta (4 en total)
+- No penalizan las respuestas incorrectas
+- Todas las preguntas pueden tener mas de una respuesta válida incluso pudiendo ser las cuatro opciones correctas.
+
 ## **1. Google Cloud Projects**
 
 - A) Los recursos (eg. VMs, buckets, bases de datos, etc) pueden pertenecer a multiples proyectos
