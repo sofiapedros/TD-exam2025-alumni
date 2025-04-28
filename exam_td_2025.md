@@ -11,7 +11,7 @@
 - C) La facturación se realiza a nivel de proyecto
 - D) La activación de API's en Google Cloud se realiza por cada proyecto
 
-**Solución:** 
+**Solución:** C, D
 
 
 ## **2. Virtual Private Clouds (VPC)**
@@ -21,7 +21,7 @@
 - C) Es posible aplicar reglas de firewall entre diferentes VPCs pero no entre VMs dentro de la misma VPC
 - D) El servicio de VPC Peering permite que dos VPCs intercambien tráfico entre ellas
 
-**Solución:**
+**Solución:** D
 
 ## **3. En Google Cloud,**
 - A) Es posible utilizar Custom Images para incluir SW ya instalado y configurado
@@ -29,7 +29,7 @@
 - C) Las Instance Templates también se pueden utilizar como backup de los discos persistentes
 - D) Una Machine Image incluye los datos del "Boot Disk" pero no del resto de discos de la instancia
 
-**Solución:**
+**Solución:** A
 
 
 ## **4. Dentro de las **Solución**es de ML/AI de Google Cloud,**
@@ -38,7 +38,7 @@
 - C) Vertex AI proporciona un entorno unificado que cubre el ciclo de vida ML completo (preparacin de datos, training, despliegue y monitorización)
 - D) Vertex AI cubre AI predictiva pero no AI generativa
 
-**Solución:**
+**Solución:** A, B, C
 
 ## **5. En Google Cloud Vertex AI AutoML,**
 - A) AutoML soporta imágenes, texto y vídeo pero no soporta datos tabulares
@@ -46,7 +46,7 @@
 - C) AutoML automáticamente busca los mejores modelos y ajusta los hiperparámetros
 - D) AutoML utiliza transfer learning
 
-**Solución:**
+**Solución:** B, C, D 
 
 ## **6. Contenedores**
 - A) La imagen Docker de un contenedor contiene tanto la aplicación como el kernel del sistema operativo
@@ -54,7 +54,7 @@
 - C) Un contenedor esta formado por capas. Las capas que provienen de la imagen son de solo lectura y sobre ellas se añade una capa que permite tambien escritura.
 - D) Un Dockerfile es un fichero de texto que contiene instrucciones para indicar a Docker como construir una imagen
 
-**Solución:**
+**Solución:** D
 
 ## **7. Arquitectura Kubernetes**
 - A) El kube-proxy es el elemento responsable de asignar Pods a los Nodos
@@ -62,7 +62,7 @@
 - C) Los controladores se ejecutan en los worker nodes
 - D) El componente etcd contiene la especificación de los Pods y sus estados, pero no la configuración de los servicios expresada en los objetos ConfigMaps
 
-**Solución:**
+**Solución:** D
 
 ## **8. Kubernetes networking**
 - A) Kubernetes no define la solución de networking para los pods sino que la delega en plugins accesibles a traves del CNI
@@ -70,7 +70,7 @@
 - C) El recurso Service de tipo LoadBalancer me permite realizar enrutamiento en base a URL
 - D) En kubernetes la comunicación entre Pods que residen en diferentes nodos se realiza a traves de NATs ya que los Pods adquieren direcciones privadas
 
-**Solución:**
+**Solución:** A
 
 ## **9. Pods**
 - A) Por defecto, todos los contenedores de un Pod comparten la misma dirección IP
@@ -78,7 +78,7 @@
 - C) Cuando un contenedor dentro de un Pod finaliza su ejecución, Kubernetes lo reinicia automáticamente
 - D) La propiedad resources.requests.cpu de un contendor dentro de un Pod indica la maxima cantidad de CPU que el contenedor puede utilizar
 
-**Solución:**
+**Solución:** C
 
 ## **10. Volúmenes**
 - A) Si un Pod es re-asignado a un nodo diferente, los datos guardados en un volumen de tipo emptyDir siguen estando accesibles
@@ -86,7 +86,7 @@
 - C) En GKE, se considera una buena práctica definir el disco persistente de Google Cloud en la sección "volumes" de la especificación del Pod
 - D) Para realizar provisión automática de volúmenes en Kubernetes basta con crear dos recursos adicionales: PersistentVolume y PersistentVolumeClaim y configurarlos adecuadamente
 
-**Solución:** 
+**Solución:** A, B, C
 
 ## **11. Deployments and StatefulSets**
 - A) Si el nodo donde reside un Pod que forma parte de un Deployment falla, Kubernetes creará un nuevo Pod en un nuevo nodo y dará al nuevo Pod la misma identidad de red que tenia en el nodo que falló
@@ -94,7 +94,7 @@
 - C) Para desplegar microservicios que implementan servidores de base de datos, la aproximación recomendada es utilizar StatefulSet
 - D) El recurso Deployment es ideal para microservicios que requieren almacenamiento persistente
 
-**Solución:** 
+**Solución:**  C
 
 
 ## **12. ¿Qué comandos de Terraform usarías para inicializar un proyecto y validar la sintaxis de los ficheros?**
@@ -104,7 +104,7 @@
 - D) `terraform apply --dry-run`  
 
 
-**Solución**: 
+**Solución**: A
 
 ## **13. ¿Cuál de los siguientes comandos añade un origen remoto en Git?**
 - A) `git fetch origin`  
@@ -113,7 +113,7 @@
 - D) `git track origin`  
 
 
-**Solución**: 
+**Solución**: C
 
 ## **14. ¿Qué hace exactamente este fragmento de código en GitHub Actions?**
 ```yaml
@@ -130,7 +130,7 @@
 - D) Lanza un servicio en Cloud Run en la región indicada
 
 
-**Solución**: 
+**Solución**: B, D
 
 
 ## **15. ¿Qué comandos de GitHub Actions podrías usar para acceder a los secretos definidos en el repositorio?**
@@ -140,7 +140,7 @@
 - D) `Ninguno de los anteriores`
 
 
-**Solución**: 
+**Solución**: B
 
 ## **16. ¿Qué comando se ejecutó en la práctica hecha en clase sobre FaaS para desplegar manualmente una función en Google Cloud Functions que se ejecutaba al acceder a una url http?**
 - A) `gcloud functions deploy http_hello_world --trigger-event=upload`  
@@ -149,7 +149,7 @@
 - D) `gcloud run deploy --trigger-http http_hello_world`  
 
 
-**Solución**: 
+**Solución**: C
 
 ## **17. ¿Qué hace este bloque en un workflow de GitHub Actions?**
 ```yaml
@@ -164,7 +164,7 @@ on:
 - D) Ejecuta el workflow al hacer merge en `main`  
 
 
-**Solución**:
+**Solución**: C
 
 ## **18. En la práctica con Cloud Run, ¿qué parámetros eran imprescindibles al usar `gcloud run deploy`?**
 - A) `--project`  
@@ -173,7 +173,7 @@ on:
 - D) `--function-name`  
 
 
-**Solución**:
+**Solución**: B
 
 
 ## **19. ¿Qué comandos de Terraform  de los listados a continuación se usaron durante la práctica para crear y destruir el clúster GKE?**
@@ -183,7 +183,7 @@ on:
 - D) `terraform clean`  
 
 
-**Solución**:
+**Solución**: A, C
 
 
 
@@ -193,5 +193,5 @@ on:
 - C) `git reset --hard`
 - D) `git stash pop`  
 
-**Solución**:
+**Solución**: B
 
