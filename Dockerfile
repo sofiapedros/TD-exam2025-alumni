@@ -2,7 +2,7 @@
 FROM python:3.11-slim
 
 # Establece el directorio de trabajo dentro del contenedor
-WORKDIR .
+WORKDIR /
 
 # Copia solo los archivos necesarios para instalar dependencias primero (optimiza la caché de Docker)
 COPY requirements.txt .
